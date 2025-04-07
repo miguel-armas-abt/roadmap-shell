@@ -6,6 +6,7 @@
 [1. Shortcuts](#1-shortcuts) <br>
 [2. Gestión de comandos](#2-gestión-de-comandos) <br>
 [3. Gestión de ficheros y directorios](#3-gestión-de-ficheros-y-directorios) <br>
+[4. Grep](#4-grep) <br>
 
 ---
 
@@ -36,7 +37,7 @@
 > ```
 
 > ### ▶️ Gestión de alias
-> Los alias existen durante la sesión de la shell.
+> Los alias existen solo durante la sesión de la shell.
 > ```shell script
 > alias <alias-name>=<command> # Crear alias
 > alias # Mostrar alias
@@ -88,8 +89,18 @@
 > cat <filename.extension>
 > ```
 
+--- 
 
+## 4. GREP
+El comando `grep` (Global Regular Expression Print) es útil para extraer solo las líneas que coinciden con un patrón especificado.
 
+> ### ▶️ Filtrar las líneas coincidentes
+> - Utilice `-i` para ignorar mayúsculas y minúsculas
+> - Utilice `-v` para mostrar las líneas que no coincidan con el patrón
+> ```shell script
+> grep "<match-word>" <filename>.<extension> # Filtrar líneas de un archivo
+> kubectl get pods -A | grep "<match-word>" # Filtrar salida de comandos
+> ```
 
 
 
